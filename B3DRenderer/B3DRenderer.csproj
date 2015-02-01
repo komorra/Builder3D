@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C47B0CC2-0F94-4B40-9165-EC3E0C7C0937}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
+    <ProjectGuid>{1BBAC683-FB9B-4651-A45D-902D2CB9CD66}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Builder3D</RootNamespace>
-    <AssemblyName>Builder3D</AssemblyName>
+    <RootNamespace>B3DRenderer</RootNamespace>
+    <AssemblyName>B3DRenderer</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -38,52 +36,12 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
-    <Reference Include="System.Deployment" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormMain.Designer.cs">
-      <DependentUpon>FormMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <None Include="Properties\Settings.settings">
-      <Generator>SettingsSingleFileGenerator</Generator>
-      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
-    </None>
-    <Compile Include="Properties\Settings.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Settings.settings</DependentUpon>
-      <DesignTimeSharedInput>True</DesignTimeSharedInput>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\B3DProject\B3DProject.csproj">
-      <Project>{c0331432-3470-499f-b6b7-22130052e0dc}</Project>
-      <Name>B3DProject</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\B3DRenderer\B3DRenderer.csproj">
-      <Project>{1bbac683-fb9b-4651-a45d-902d2cb9cd66}</Project>
-      <Name>B3DRenderer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\B3DUI\B3DUI.csproj">
-      <Project>{81dc36a9-1f8e-4ea1-9203-9daca0dbfac5}</Project>
-      <Name>B3DUI</Name>
-    </ProjectReference>
     <ProjectReference Include="..\B3DUtils\B3DUtils.csproj">
       <Project>{51142a75-5ec6-4b8c-be7e-1aec9094f3c8}</Project>
       <Name>B3DUtils</Name>
